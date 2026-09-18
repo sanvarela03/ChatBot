@@ -64,6 +64,13 @@ Entrega y visualización exitosa de mensajes enviados desde Meta Cloud API hacia
 
 ---
 
+### 5. Despliegue en Vivo y Estado Saludable en Render
+Panel de control de Render mostrando el servicio web en estado **Live**, conectado al repositorio de GitHub y el aviso de suspensión por inactividad (*spin down*) característico del plan gratuito:
+
+![Despliegue Live en Render](docs/images/render_dashboard_live.png)
+
+---
+
 ## ⚙️ Variables de Entorno
 
 El proyecto lee variables tanto de un archivo local `.env` (a través de `io.github.cdimascio:java-dotenv`) como de las variables de entorno del sistema operativo inyectadas por Render:
@@ -86,7 +93,7 @@ El proyecto lee variables tanto de un archivo local `.env` (a través de `io.git
 * **Gestor de Construcción:** Gradle 9.7.1
 * **Cliente HTTP:** Spring 3+ `RestClient` (no bloqueante, tipado)
 * **Serialización:** Jackson Databind (`com.fasterxml.jackson.databind.JsonNode`)
-* **Documentación:** SpringDoc OpenAPI 2.8.6 (Swagger UI 3.0)
+* **Documentación:** SpringDoc OpenAPI 2.8.6 (Swagger UI 3.0 con `@Tag`, `@Operation`, `@Parameter`, `@ApiResponse`)
 * **Contenedor:** Docker multi-etapa con:
   * Etapa 1: Compilación Gradle y resolución de dependencias offline.
   * Etapa 2: Precalentamiento de memoria RAM con **Class Data Sharing (CDS - `app.jsa`)**.
