@@ -1,0 +1,27 @@
+server:
+  port: ${PORT:8080}
+
+spring:
+  application:
+    name: ChatBot
+
+whatsapp:
+  api:
+    base-url: ${WHATSAPP_API_BASE_URL:https://graph.facebook.com}
+    version: ${WHATSAPP_API_VERSION:v21.0}
+    token: ${ACCESS_TOKEN_DE_META:}
+    phone-id: ${ID_DE_TU_TELEFONO_DE_PRUEBA:}
+  webhook:
+    verify-token: ${MI_TOKEN_SECRETO:}
+
+tos:
+  uri: https://nexum.com/terms
+
+api:
+  version: 1.0.0
+  description: Esta api es usada para gestionar los servicios del chatbot
+  server:
+    local:
+      url: http://localhost:8080
+    remote:
+      url: https://nexum-be.onrender.com/
