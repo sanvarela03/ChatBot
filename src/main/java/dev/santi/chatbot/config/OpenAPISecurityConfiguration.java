@@ -30,7 +30,7 @@ import org.springframework.context.annotation.Configuration;
                 license = @License(
                         name = "Apache 2.0", url = "https://www.apache.org/licenses/LICENSE-2.0"
                 ),
-                termsOfService = "${tos.uri:https://nexum.com/terms}",
+                termsOfService = "${tos.uri:https://chatbot-q6is.onrender.com/terms}",
                 description = "${api.description}",
                 extensions = @Extension(
                         name = "Prueba nombre extens",

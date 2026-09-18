@@ -1,4 +1,4 @@
-# 🤖 WhatsApp Cloud API ChatBot - Nexum
+# 🤖 WhatsApp Cloud API ChatBot
 
 Servicio backend de mensajería y chatbot automatizado conectado a la **API de WhatsApp Cloud de Meta**, desarrollado con **Java 17**, **Spring Boot 3.4.4** y **Gradle**. Contenerizado con **Docker** y desplegado en alta disponibilidad en **Render** con optimizaciones de memoria mediante **Class Data Sharing (CDS)**.
 
@@ -122,7 +122,7 @@ Meta aplica una política de seguridad por la cual las apps en modo **"En desarr
 
 1. Ve a **Meta Developers** > Tu App (`1079350187808821`) > **Configuración de la app** > **Básica**.
 2. Ingresa la URL en **Política de privacidad**:
-   `https://chatbot-q6is.onrender.com/swagger-ui/index.html` (o `https://nexum.com/terms`).
+   `https://chatbot-q6is.onrender.com/swagger-ui/index.html`.
 3. Ingresa la misma URL en **Términos del servicio**.
 4. Selecciona una **Categoría** (ej. *Negocios* o *Utilidades*).
 5. Guarda los cambios y en la barra superior cambia el interruptor a **"En vivo"** (*Live Mode*).

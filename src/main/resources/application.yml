@@ -15,7 +15,7 @@ whatsapp:
     verify-token: ${MI_TOKEN_SECRETO:}
 
 tos:
-  uri: https://nexum.com/terms
+  uri: https://chatbot-q6is.onrender.com/terms
 
 api:
   version: 1.0.0
@@ -24,4 +24,4 @@ api:
     local:
       url: http://localhost:8080
     remote:
-      url: https://nexum-be.onrender.com/
+      url: https://chatbot-q6is.onrender.com/
